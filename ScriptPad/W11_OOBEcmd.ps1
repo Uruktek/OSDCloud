@@ -1,10 +1,10 @@
 #================================================
 #   [PreOS] Update Module
 #================================================
-if ((Get-MyComputerModel) -match 'Virtual') {
-    Write-Host  -ForegroundColor Green "Setting Display Resolution to 1600x"
-    Set-DisRes 1600
-}
+# if ((Get-MyComputerModel) -match 'Virtual') {
+#     Write-Host  -ForegroundColor Green "Setting Display Resolution to 1600x"
+#     Set-DisRes 1600
+# }
 
 Write-Host -ForegroundColor Green "Updating OSD PowerShell Module"
 Install-Module OSD -Force
@@ -92,27 +92,27 @@ Write-Host -ForegroundColor Red $AssignedComputerName
 Write-Host ""
 
 Write-Host -ForegroundColor Green "Create C:\ProgramData\OSDeploy\OSDeploy.AutopilotOOBE.json"
-$AutopilotOOBEJson = @"
-{
-    "AssignedComputerName" : "$AssignedComputerName",
-    "AddToGroup":  "AADGroupX",
-    "Assign":  {
-                   "IsPresent":  true
-               },
-    "GroupTag":  "GroupTagXXX",
-    "Hidden":  [
-                   "AddToGroup",
-                   "AssignedUser",
-                   "PostAction",
-                   "GroupTag",
-                   "Assign"
-               ],
-    "PostAction":  "Quit",
-    "Run":  "NetworkingWireless",
-    "Docs":  "https://google.com/",
-    "Title":  "Autopilot Manual Register"
-}
-"@
+# $AutopilotOOBEJson = @"
+# {
+#     "AssignedComputerName" : "$AssignedComputerName",
+#     "AddToGroup":  "AADGroupX",
+#     "Assign":  {
+#                    "IsPresent":  true
+#                },
+#     "GroupTag":  "GroupTagXXX",
+#     "Hidden":  [
+#                    "AddToGroup",
+#                    "AssignedUser",
+#                    "PostAction",
+#                    "GroupTag",
+#                    "Assign"
+#                ],
+#     "PostAction":  "Quit",
+#     "Run":  "NetworkingWireless",
+#     "Docs":  "https://google.com/",
+#     "Title":  "Autopilot Manual Register"
+# }
+# "@
 
 If (!(Test-Path "C:\ProgramData\OSDeploy")) {
     New-Item "C:\ProgramData\OSDeploy" -ItemType Directory -Force | Out-Null
