@@ -4,12 +4,14 @@ $Global:Transcript = "$((Get-Date).ToString('yyyy-MM-dd-HHmmss'))-Add-unattend.l
 Start-Transcript -Path (Join-Path "C:\OSDCloud\Logs\" $Global:Transcript) -ErrorAction Ignore
 
 try {
-    Invoke-WebRequest -Uri https://raw.githubusercontent.com/uruktek/OSDCloud/main/unattend.xml -OutFile Out-File -FilePath 'C:\Windows\Panther\unattend.xml' -Encoding ascii -Force
+    Invoke-WebRequest -Uri https://raw.githubusercontent.com/uruktek/OSDCloud/main/unattend.xml -OutFile 'C:\Windows\Panther\unattend.xml' -Encoding ascii -Force
     Write-host -ForegroundColor Green "unattend.xml has been downloaded to C:\Windows\Panther\unattend.xml"
+    
+    #commented out for testing.
+    # Invoke-WebRequest -Uri https://github.com/Uruktek/OSDCloud/raw/refs/heads/main/ppkg/ppkg.ppkg -OutFile 'C:\OSDcloud\Automate\Provisioning\ppkg.ppkg' -Force
+    # write-host -ForegroundColor Green "ppkg.ppkg has been downloaded to C:\OSDcloud\Automate\Provisioning\ppkg.ppkg"
 }
 catch {
     write-host "error within Add-unattend. :" $_
 }
-
-
 Stop-Transcript

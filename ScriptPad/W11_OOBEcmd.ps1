@@ -26,6 +26,7 @@ $Params = @{
 }
 Start-OSDCloud @Params
 
+
 #================================================
 #  [PostOS] OOBEDeploy Configuration
 #================================================
@@ -79,7 +80,7 @@ If (!(Test-Path "C:\ProgramData\OSDeploy")) {
     New-Item "C:\ProgramData\OSDeploy" -ItemType Directory -Force | Out-Null
 }
 $OOBEDeployJson | Out-File -FilePath "C:\ProgramData\OSDeploy\OSDeploy.OOBEDeploy.json" -Encoding ascii -Force
-
+Invoke-WebRequest -Uri https://github.com/Uruktek/OSDCloud/raw/refs/heads/main/ppkg/ppkg.ppkg -OutFile 'C:\OSDcloud\Automate\Provisioning\ppkg.ppkg' -Force
 #================================================
 #  [PostOS] AutopilotOOBE Configuration Staging
 #================================================
