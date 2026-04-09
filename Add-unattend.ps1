@@ -10,3 +10,6 @@ try {
 catch {
     write-host "error within Add-unattend. :" $_
 }
+
+
+Stop-Transcript
