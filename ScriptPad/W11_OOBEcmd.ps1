@@ -80,7 +80,7 @@ If (!(Test-Path "C:\ProgramData\OSDeploy")) {
     New-Item "C:\ProgramData\OSDeploy" -ItemType Directory -Force | Out-Null
 }
 $OOBEDeployJson | Out-File -FilePath "C:\ProgramData\OSDeploy\OSDeploy.OOBEDeploy.json" -Encoding ascii -Force
-Invoke-WebRequest -Uri "https://github.com/Uruktek/OSDCloud/raw/refs/heads/main/ppkg/ppkg.ppkg" -OutFile 'C:\OSDeploy\Automate\Provisioning\ppkg.ppkg' -Verbose
+Invoke-WebRequest -Uri "https://github.com/Uruktek/OSDCloud/raw/refs/heads/main/ppkg/ppkg.ppkg" -OutFile 'X:\OSDeploy\Automate\Provisioning\ppkg.ppkg' -Verbose
 
 #================================================
 #  [PostOS] AutopilotOOBE Configuration Staging
@@ -127,18 +127,18 @@ If (!(Test-Path "C:\ProgramData\OSDeploy")) {
 #================================================
 Write-Host -ForegroundColor Green "Create C:\Windows\System32\Scripts\OOBE.cmd"
 #Start /Wait PowerShell -NoL -C Invoke-WebPSScript https://cleanup.osdcloud.ch
+#Start /Wait PowerShell -NoL -C Invoke-WebPSScript https://raw.githubusercontent.com/uruktek/OSDCloud/refs/heads/main/Add-unattend.ps1
 $OOBECMD = @'
 PowerShell -NoL -Com Set-ExecutionPolicy RemoteSigned -Force
 Set Path = %PATH%;C:\Program Files\WindowsPowerShell\Scripts
 Start /Wait PowerShell -NoL -C Install-Module OSD -Force -Verbose
 Start /Wait PowerShell -NoL -C Invoke-WebRequest -Uri "https://github.com/Uruktek/OSDCloud/raw/refs/heads/main/ppkg/ppkg.ppkg" -OutFile 'C:\OSDeploy\Automate\Provisioning\ppkg.ppkg' -Verbose
-Start /Wait PowerShell -NoL -C Invoke-WebPSScript https://raw.githubusercontent.com/uruktek/OSDCloud/refs/heads/main/Add-unattend.ps1
 Start /Wait PowerShell -NoL -C Invoke-WebPSScript https://raw.githubusercontent.com/uruktek/OSDCloud/main/Set-KeyboardLanguage.ps1
 Start /Wait PowerShell -NoL -C Invoke-WebPSScript https://raw.githubusercontent.com/uruktek/OSDCloud/main/Install-EmbeddedProductKey.ps1
 Start /Wait PowerShell -NoL -C Start-OOBEDeploy
 Start /Wait PowerShell -NoL -C Invoke-WebPSScript https://raw.githubusercontent.com/uruktek/OSDCloud/main/Lenovo_BIOS_Settings.ps1
-Start /Wait PowerShell -NoL -C Restart-Computer -Force
 '@
+#Start /Wait PowerShell -NoL -C Restart-Computer -Force
 $OOBECMD | Out-File -FilePath 'C:\Windows\System32\OOBE.cmd' -Encoding ascii -Force
 
 #================================================
