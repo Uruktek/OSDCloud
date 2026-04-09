@@ -117,7 +117,8 @@ $AutopilotOOBEJson = @"
 If (!(Test-Path "C:\ProgramData\OSDeploy")) {
     New-Item "C:\ProgramData\OSDeploy" -ItemType Directory -Force | Out-Null
 }
-$AutopilotOOBEJson | Out-File -FilePath "C:\ProgramData\OSDeploy\OSDeploy.AutopilotOOBE.json" -Encoding ascii -Force
+# teno disabling of this.
+#$AutopilotOOBEJson | Out-File -FilePath "C:\ProgramData\OSDeploy\OSDeploy.AutopilotOOBE.json" -Encoding ascii -Force
 
 #================================================
 #  [PostOS] AutopilotOOBE CMD Command Line
@@ -127,12 +128,12 @@ $OOBECMD = @'
 PowerShell -NoL -Com Set-ExecutionPolicy RemoteSigned -Force
 Set Path = %PATH%;C:\Program Files\WindowsPowerShell\Scripts
 Start /Wait PowerShell -NoL -C Install-Module OSD -Force -Verbose
+Start /Wait PowerShell -NoL -C Invoke-WebPSScript https://raw.githubusercontent.com/uruktek/OSDCloud/refs/heads/main/Add-unattend.ps1
 Start /Wait PowerShell -NoL -C Invoke-WebPSScript https://raw.githubusercontent.com/uruktek/OSDCloud/main/Set-KeyboardLanguage.ps1
 Start /Wait PowerShell -NoL -C Invoke-WebPSScript https://raw.githubusercontent.com/uruktek/OSDCloud/main/Install-EmbeddedProductKey.ps1
 Start /Wait PowerShell -NoL -C Start-OOBEDeploy
 Start /Wait PowerShell -NoL -C Invoke-WebPSScript https://raw.githubusercontent.com/uruktek/OSDCloud/main/Lenovo_BIOS_Settings.ps1
 Start /Wait PowerShell -NoL -C Invoke-WebPSScript https://cleanup.osdcloud.ch
-Start /Wait PowerShell -NoL -C Invoke-WebPSScript https://raw.githubusercontent.com/uruktek/OSDCloud/refs/heads/main/Add-unattend.ps1
 Start /Wait PowerShell -NoL -C Restart-Computer -Force
 '@
 $OOBECMD | Out-File -FilePath 'C:\Windows\System32\OOBE.cmd' -Encoding ascii -Force
