@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WindowsCustomizations>
+  <PackageConfig xmlns="urn:schemas-Microsoft-com:Windows-ICD-Package-Config.v1.0">
+    <ID>{5afb2046-d989-4a93-afec-d77b01f58690}</ID>
+    <Name>ppkg</Name>
+    <Version>1.1</Version>
+    <OwnerType>OEM</OwnerType>
+    <Rank>0</Rank>
+    <Notes></Notes>
+  </PackageConfig>
+  <Settings xmlns="urn:schemas-microsoft-com:windows-provisioning">
+    <Customizations>
+      <Common>
+        <Accounts>
+          <ComputerAccount>
+            <ComputerName>Uruktek-%RAND:5%</ComputerName>
+          </ComputerAccount>
+          <Users>
+            <User UserName="Admin">
+              <Password>Jokejoke1</Password>
+              <UserGroup>Administrators</UserGroup>
+            </User>
+          </Users>
+        </Accounts>
+        <OOBE>
+          <Desktop>
+            <HideOobe>True</HideOobe>
+          </Desktop>
+        </OOBE>
+        <Policies>
+          <ApplicationManagement>
+            <AllowAllTrustedApps>Yes</AllowAllTrustedApps>
+          </ApplicationManagement>
+        </Policies>
+        <ProvisioningCommands>
+          <PrimaryContext>
+            <Command>
+              <CommandConfig Name="RustDesk">
+                <CommandFile>C:\Users\cody\Downloads\rustdesk-1.4.6-x86_64.msi</CommandFile>
+                <CommandLine>msiexec /i "rustdesk-1.4.6-x86_64.msi" /qn /norestart</CommandLine>
+                <ContinueInstall>True</ContinueInstall>
+                <DependencyPackages>
+                  <Dependency Name="VC_redist.x86">C:\Users\cody\Downloads\VC_redist.x86.exe</Dependency>
+                  <Dependency Name="VC_redist.x64">C:\Users\cody\Downloads\VC_redist.x64.exe</Dependency>
+                </DependencyPackages>
+                <RestartRequired>False</RestartRequired>
+                <ReturnCodeRestart>3010</ReturnCodeRestart>
+                <ReturnCodeSuccess>0</ReturnCodeSuccess>
+              </CommandConfig>
+            </Command>
+          </PrimaryContext>
+        </ProvisioningCommands>
+      </Common>
+    </Customizations>
+  </Settings>
+</WindowsCustomizations>
