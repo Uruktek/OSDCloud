@@ -97,7 +97,7 @@ function OSDCloudLogic {
     $Serial = Get-WmiObject Win32_bios | Select-Object -ExpandProperty SerialNumber
     $TargetComputername = $Serial.Substring(0,9)
 
-    $AssignedComputerName = "$ComputerPrefix-AkosCloud-$TargetComputername"
+    $AssignedComputerName = "$ComputerPrefix-Win-$TargetComputername"
     Write-Host -ForegroundColor Green $AssignedComputerName
 
     $AutopilotOOBEJson = @"
@@ -133,8 +133,8 @@ PowerShell -NoL -Com Set-ExecutionPolicy RemoteSigned -Force
 Set Path = %PATH%;C:\Program Files\WindowsPowerShell\Scripts
 Start /Wait PowerShell -NoL -C Install-Module OSD -Force
 Start /Wait PowerShell -NoL -C Install-Module AutopilotOOBE -Force
-Start /Wait PowerShell -NoL -C Invoke-WebPSScript https://raw.githubusercontent.com/urukteks/OSDCloud/main/Set-KeyboardLanguage.ps1
-Start /Wait PowerShell -NoL -C Invoke-WebPSScript https://raw.githubusercontent.com/urukteks/OSDCloud/main/Install-EmbeddedProductKey.ps1
+Start /Wait PowerShell -NoL -C Invoke-WebPSScript https://raw.githubusercontent.com/uruktek/OSDCloud/main/Set-KeyboardLanguage.ps1
+Start /Wait PowerShell -NoL -C Invoke-WebPSScript https://raw.githubusercontent.com/uruktek/OSDCloud/main/Install-EmbeddedProductKey.ps1
 Start /Wait PowerShell -NoL -C Invoke-WebPSScript https://check-autopilotprereq.osdcloud.ch
 Start /Wait PowerShell -NoL -C Invoke-WebPSScript https://start-autopilotoobe.osdcloud.ch
 Start /Wait PowerShell -NoL -C Start-OOBEDeploy

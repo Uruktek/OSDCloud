@@ -84,7 +84,7 @@ Write-Host -ForegroundColor Green "Define Computername:"
 $Serial = Get-WmiObject Win32_bios | Select-Object -ExpandProperty SerialNumber
 $TargetComputername = $Serial.Substring(4,4)
 
-$AssignedComputerName = "AkosCloud-$TargetComputername"
+$AssignedComputerName = "Win-$TargetComputername"
 Write-Host -ForegroundColor Red $AssignedComputerName
 Write-Host ""
 
@@ -124,8 +124,8 @@ $OOBECMD = @'
 PowerShell -NoL -Com Set-ExecutionPolicy RemoteSigned -Force
 Set Path = %PATH%;C:\Program Files\WindowsPowerShell\Scripts
 Start /Wait PowerShell -NoL -C Install-Module OSD -Force -Verbose
-Start /Wait PowerShell -NoL -C Invoke-WebPSScript https://raw.githubusercontent.com/urukteks/OSDCloud/main/Set-KeyboardLanguage.ps1
-Start /Wait PowerShell -NoL -C Invoke-WebPSScript https://raw.githubusercontent.com/urukteks/OSDCloud/main/Install-EmbeddedProductKey.ps1
+Start /Wait PowerShell -NoL -C Invoke-WebPSScript https://raw.githubusercontent.com/uruktek/OSDCloud/main/Set-KeyboardLanguage.ps1
+Start /Wait PowerShell -NoL -C Invoke-WebPSScript https://raw.githubusercontent.com/uruktek/OSDCloud/main/Install-EmbeddedProductKey.ps1
 Start /Wait PowerShell -NoL -C Start-OOBEDeploy
 Start /Wait PowerShell -NoL -C Restart-Computer -Force
 '@
