@@ -86,10 +86,10 @@ $OOBECMD = @'
 PowerShell -NoL -Com Set-ExecutionPolicy RemoteSigned -Force
 Set Path = %PATH%;C:\Program Files\WindowsPowerShell\Scripts
 Start /Wait PowerShell -NoL -C Install-Module OSD -Force -Verbose
-Start /Wait PowerShell -NoL -C Invoke-WebRequest -Uri "https://github.com/Uruktek/OSDCloud/raw/refs/heads/main/ppkg/Project_2.ppkg" -OutFile 'C:\OSDeploy\Automate\Provisioning\Project_2.ppkg' -Verbose
+Start /Wait PowerShell -NoL -C Invoke-WebRequest -Uri "https://github.com/Uruktek/OSDCloud/raw/refs/heads/main/ppkg/Project_2.ppkg" -OutFile 'C:\OSDcloud\Automate\Provisioning\Project_2.ppkg' -Verbose
 Start /Wait PowerShell -NoL -C Start-OOBEDeploy
 '@
-$OOBECMD | Out-File -FilePath 'C:\Windows\System32\OOBE.cmd' -Encoding ascii -Force
+$OOBECMD | Out-File -FilePath 'C:\Windows\System32\Scripts\OOBE.cmd' -Encoding ascii -Force
 
 #================================================
 #  [PostOS] SetupComplete CMD Command Line
@@ -97,8 +97,8 @@ $OOBECMD | Out-File -FilePath 'C:\Windows\System32\OOBE.cmd' -Encoding ascii -Fo
 Write-Host -ForegroundColor Green "Create C:\Windows\Setup\Scripts\SetupComplete.cmd"
 $SetupCompleteCMD = @'
 powershell.exe -Command Set-ExecutionPolicy RemoteSigned -Force
-Start /Wait PowerShell -NoL -C Invoke-WebRequest -Uri "https://github.com/Uruktek/OSDCloud/raw/refs/heads/main/ppkg/Project_2.ppkg" -OutFile 'C:\OSDeploy\Automate\Provisioning\Project_2.ppkg' -Verbose
-Start /Wait PowerShell -NoL -C Install-ProvisioningPackage -PackagePath 'C:\OSDeploy\Automate\Provisioning\Project_2.ppkg' -Verbose
+Start /Wait PowerShell -NoL -C Invoke-WebRequest -Uri "https://github.com/Uruktek/OSDCloud/raw/refs/heads/main/ppkg/Project_2.ppkg" -OutFile 'C:\OSDcloud\Automate\Provisioning\Project_2.ppkg' -Verbose
+Start /Wait PowerShell -NoL -C Install-ProvisioningPackage -PackagePath 'C:\OSDcloud\Automate\Provisioning\Project_2.ppkg' -Verbose
 '@
 $SetupCompleteCMD | Out-File -FilePath 'C:\Windows\Setup\Scripts\SetupComplete.cmd' -Encoding ascii -Force
 
