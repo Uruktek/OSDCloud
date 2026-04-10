@@ -79,7 +79,7 @@ $OOBEDeployJson | Out-File -FilePath "C:\ProgramData\OSDeploy\OSDeploy.OOBEDeplo
 #  [PostOS] AutopilotOOBE CMD Command Line
 #================================================
 
-Write-Host -ForegroundColor Green "Create C:\Windows\System32\Scripts\OOBE.cmd"
+Write-Host -ForegroundColor Green "Create C:\Windows\System32\OOBE.cmd"
 #Start /Wait PowerShell -NoL -C Invoke-WebPSScript https://cleanup.osdcloud.ch
 #Start /Wait PowerShell -NoL -C Invoke-WebPSScript https://raw.githubusercontent.com/uruktek/OSDCloud/refs/heads/main/Add-unattend.ps1
 $OOBECMD = @'
@@ -89,7 +89,7 @@ Start /Wait PowerShell -NoL -C Install-Module OSD -Force -Verbose
 Start /Wait PowerShell -NoL -C Invoke-WebRequest -Uri "https://github.com/Uruktek/OSDCloud/raw/refs/heads/main/ppkg/Project_2.ppkg" -OutFile 'C:\OSDcloud\Automate\Provisioning\Project_2.ppkg' -Verbose
 Start /Wait PowerShell -NoL -C Start-OOBEDeploy
 '@
-$OOBECMD | Out-File -FilePath 'C:\Windows\System32\Scripts\OOBE.cmd' -Encoding ascii -Force
+$OOBECMD | Out-File -FilePath 'C:\Windows\System32\OOBE.cmd' -Encoding ascii -Force
 
 #================================================
 #  [PostOS] SetupComplete CMD Command Line
