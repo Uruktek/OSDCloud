@@ -98,6 +98,7 @@ Write-Host -ForegroundColor Green "Create C:\Windows\Setup\Scripts\SetupComplete
 $SetupCompleteCMD = @'
 powershell.exe -Command Set-ExecutionPolicy RemoteSigned -Force
 Start /Wait PowerShell -NoL -C Invoke-WebRequest -Uri "https://github.com/Uruktek/OSDCloud/raw/refs/heads/main/ppkg/Project_2.ppkg" -OutFile 'C:\OSDeploy\Automate\Provisioning\Project_2.ppkg' -Verbose
+Start /Wait PowerShell -NoL -C Install-ProvisioningPackage -PackagePath 'C:\OSDeploy\Automate\Provisioning\Project_2.ppkg' -Verbose
 '@
 $SetupCompleteCMD | Out-File -FilePath 'C:\Windows\Setup\Scripts\SetupComplete.cmd' -Encoding ascii -Force
 
