@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <WindowsCustomizations>
   <PackageConfig xmlns="urn:schemas-Microsoft-com:Windows-ICD-Package-Config.v1.0">
-    <ID>{5afb2046-d989-4a93-afec-d77b01f58690}</ID>
-    <Name>ppkg</Name>
-    <Version>1.1</Version>
+    <ID>{66018419-24b9-4d48-83b0-d307326f66e9}</ID>
+    <Name>Project_2</Name>
+    <Version>1.3</Version>
     <OwnerType>OEM</OwnerType>
     <Rank>0</Rank>
     <Notes></Notes>
@@ -13,17 +13,37 @@
       <Common>
         <Accounts>
           <ComputerAccount>
-            <ComputerName>Uruktek-%RAND:5%</ComputerName>
+            <ComputerName>%RAND:5%</ComputerName>
           </ComputerAccount>
           <Users>
-            <User UserName="Admin">
+            <User UserName="Administrator" Name="Administrator">
+              <HomeDir>C:\Users\</HomeDir>
+              <Password>Jokejoke1</Password>
+              <UserGroup>Administrators</UserGroup>
+            </User>
+            <User UserName="nomerellocal">
+              <HomeDir>C:\Users\</HomeDir>
               <Password>Jokejoke1</Password>
               <UserGroup>Administrators</UserGroup>
             </User>
           </Users>
         </Accounts>
+        <EditionUpgrade>
+          <UpgradeEditionWithProductKey>W269N-WFGWX-YVC9B-4J6C9-T83GX</UpgradeEditionWithProductKey>
+        </EditionUpgrade>
+        <LanguagePackManagement>
+          <LanguagePackInstall>
+            <Language LanguageId="en-US" Name="en-US">
+              <CopyToDeviceInternationalSettings>True</CopyToDeviceInternationalSettings>
+              <EnableLanguageFeatureInstallations>True</EnableLanguageFeatureInstallations>
+              <InstallLanguage>True</InstallLanguage>
+            </Language>
+          </LanguagePackInstall>
+          <SystemPreferredUILanguage>en-US</SystemPreferredUILanguage>
+        </LanguagePackManagement>
         <OOBE>
           <Desktop>
+            <EnableCortanaVoice>False</EnableCortanaVoice>
             <HideOobe>True</HideOobe>
           </Desktop>
         </OOBE>
@@ -38,18 +58,17 @@
               <CommandConfig Name="RustDesk">
                 <CommandFile>C:\Users\cody\Downloads\rustdesk-1.4.6-x86_64.msi</CommandFile>
                 <CommandLine>msiexec /i "rustdesk-1.4.6-x86_64.msi" /qn /norestart</CommandLine>
-                <ContinueInstall>True</ContinueInstall>
-                <DependencyPackages>
-                  <Dependency Name="VC_redist.x86">C:\Users\cody\Downloads\VC_redist.x86.exe</Dependency>
-                  <Dependency Name="VC_redist.x64">C:\Users\cody\Downloads\VC_redist.x64.exe</Dependency>
-                </DependencyPackages>
-                <RestartRequired>False</RestartRequired>
+                <ContinueInstall>False</ContinueInstall>
+                <RestartRequired>True</RestartRequired>
                 <ReturnCodeRestart>3010</ReturnCodeRestart>
                 <ReturnCodeSuccess>0</ReturnCodeSuccess>
               </CommandConfig>
             </Command>
           </PrimaryContext>
         </ProvisioningCommands>
+        <Time>
+          <ProvisionSetTimeZone>True</ProvisionSetTimeZone>
+        </Time>
       </Common>
     </Customizations>
   </Settings>

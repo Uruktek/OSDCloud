@@ -8,8 +8,8 @@ try {
     Write-host -ForegroundColor Green "unattend.xml has been downloaded to C:\Windows\Panther\unattend.xml"
     
     #commented out for testing.
-    # Invoke-WebRequest -Uri https://github.com/Uruktek/OSDCloud/raw/refs/heads/main/ppkg/ppkg.ppkg -OutFile 'C:\OSDcloud\Automate\Provisioning\ppkg.ppkg' -Force
-    # write-host -ForegroundColor Green "ppkg.ppkg has been downloaded to C:\OSDcloud\Automate\Provisioning\ppkg.ppkg"
+    # Invoke-WebRequest -Uri https://github.com/Uruktek/OSDCloud/raw/refs/heads/main/ppkg/Project_2.ppkg -OutFile 'C:\OSDcloud\Automate\Provisioning\Project_2.ppkg' -Force
+    # write-host -ForegroundColor Green "Project_2.ppkg has been downloaded to C:\OSDcloud\Automate\Provisioning\Project_2.ppkg"
 }
 catch {
     write-host "error within Add-unattend. :" $_

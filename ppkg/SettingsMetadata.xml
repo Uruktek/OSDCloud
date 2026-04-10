@@ -257,21 +257,21 @@
         <Windows Edition="Unknown" Version="Unknown" Component="" />
       </AppearsIn>
     </Setting>
-    <Setting URI="/Accounts/Users/Admin">
+    <Setting URI="/Accounts/Users/nomerellocal">
       <Type>Tree</Type>
-      <Name>Admin</Name>
+      <Name>nomerellocal</Name>
       <Description></Description>
-      <Guid>{48ab61ca-48f2-5df8-98fc-446f7b4c6e05}</Guid>
+      <Guid>{66717d38-f1e9-58cb-ae22-8ab93b6fc0c9}</Guid>
       <IsLeaf>False</IsLeaf>
       <AppearsIn>
         <Windows Edition="Unknown" Version="Unknown" Component="" />
       </AppearsIn>
     </Setting>
-    <Setting URI="/Accounts/Users/Admin/HomeDir">
+    <Setting URI="/Accounts/Users/nomerellocal/HomeDir">
       <Type>Text</Type>
       <Name>HomeDir</Name>
       <Description>The path of the home directory for the user.</Description>
-      <Guid>{86a9c39a-97aa-5ec0-b213-48768ca9b857}</Guid>
+      <Guid>{a67d6fab-4a9b-5fea-95ee-3d30a552c997}</Guid>
       <IsLeaf>True</IsLeaf>
       <ValidationInfo>
         <MinimumLength>0</MinimumLength>
@@ -281,11 +281,11 @@
         <Windows Edition="Unknown" Version="Unknown" Component="" />
       </AppearsIn>
     </Setting>
-    <Setting URI="/Accounts/Users/Admin/Password">
+    <Setting URI="/Accounts/Users/nomerellocal/Password">
       <Type>Text</Type>
       <Name>Password</Name>
       <Description></Description>
-      <Guid>{aaf20746-bd33-5e17-8f43-b4d40d913f6e}</Guid>
+      <Guid>{77ed0f24-60f4-5654-81af-37bc5d3b719d}</Guid>
       <IsLeaf>True</IsLeaf>
       <ValidationInfo>
         <MinimumLength>0</MinimumLength>
@@ -295,11 +295,11 @@
         <Windows Edition="Unknown" Version="Unknown" Component="" />
       </AppearsIn>
     </Setting>
-    <Setting URI="/Accounts/Users/Admin/UserGroup">
+    <Setting URI="/Accounts/Users/nomerellocal/UserGroup">
       <Type>Int</Type>
       <Name>UserGroup</Name>
       <Description>Add user account into a local built-in group</Description>
-      <Guid>{1d375c6b-1980-5480-ae33-323d6ad33aa5}</Guid>
+      <Guid>{57790cf1-2f60-5b63-b4d2-4a5afb67d988}</Guid>
       <IsLeaf>True</IsLeaf>
       <Default>1</Default>
       <ValidationInfo />
@@ -12494,29 +12494,7 @@ One: Either Wi-Fi or Bluetooth will stop working</Description>
       <Name>DependencyPackages</Name>
       <Description>Win32 app dependencies</Description>
       <Guid>{cf113e11-147d-502e-877b-e0a80c2dfa3b}</Guid>
-      <IsLeaf>False</IsLeaf>
-      <AppearsIn>
-        <Windows Edition="Unknown" Version="Unknown" Component="" />
-      </AppearsIn>
-    </Setting>
-    <Setting URI="/ProvisioningCommands/PrimaryContext/Command/0/DependencyPackages/0">
-      <Type>Asset</Type>
-      <Name>VC_redist.x86</Name>
-      <Description></Description>
-      <Guid>{bcac4353-9411-59d3-bd53-71850b9e2a88}</Guid>
       <IsLeaf>True</IsLeaf>
-      <ValidationInfo />
-      <AppearsIn>
-        <Windows Edition="Unknown" Version="Unknown" Component="" />
-      </AppearsIn>
-    </Setting>
-    <Setting URI="/ProvisioningCommands/PrimaryContext/Command/0/DependencyPackages/1">
-      <Type>Asset</Type>
-      <Name>VC_redist.x64</Name>
-      <Description></Description>
-      <Guid>{bf76ee53-4cef-5a1d-9f69-60b051ceb9c3}</Guid>
-      <IsLeaf>True</IsLeaf>
-      <ValidationInfo />
       <AppearsIn>
         <Windows Edition="Unknown" Version="Unknown" Component="" />
       </AppearsIn>

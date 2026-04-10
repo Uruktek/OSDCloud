@@ -1,39 +1,177 @@
-4/9/2026 4:09:00 PM Info Project 'ppkg' created successfully and added to workspace
-4/9/2026 4:09:01 PM Info Loading scenario ID: d2fa89db-1251-4bdf-b1bf-4b96016aaea4, URI: http://localhost:9098/Scenarios/d2fa89db-1251-4bdf-b1bf-4b96016aaea4/Index.html
-4/9/2026 4:11:37 PM Info Clear all Config Template answers
-4/9/2026 4:11:37 PM Info Save Config Template answers for active project
-4/9/2026 4:11:37 PM Info Start provisioning package build
-4/9/2026 4:11:37 PM Info Exporting customizations as a Provisioning Package to 'C:\Users\cody\AppData\Local\Temp\ICD_20260409-161137-895_5084.8_288569854.1'
-4/9/2026 4:11:37 PM Info Adding runtime settings to Provisioning Package
-4/9/2026 4:11:37 PM Info CreateTempDirectory: Create directory: C:\Users\cody\AppData\Local\Temp\ICD_20260409-161137-907_5084.8_590383814.2
-4/9/2026 4:11:37 PM Info provxml writer, path = C:\Users\cody\AppData\Local\Temp\ICD_20260409-161137-907_5084.8_590383814.2\Prov\RunTime\0__Accounts_ComputerAccount.provxml
-4/9/2026 4:11:37 PM Info provxml writer, path = C:\Users\cody\AppData\Local\Temp\ICD_20260409-161137-907_5084.8_590383814.2\Prov\RunTime\1__Accounts_Users_Admin.provxml
-4/9/2026 4:11:37 PM Info provxml writer, path = C:\Users\cody\AppData\Local\Temp\ICD_20260409-161137-907_5084.8_590383814.2\Prov\RunTime\2__Policies_ApplicationManagement_AllowAllTrustedApps.provxml
-4/9/2026 4:11:37 PM Info provxml writer, path = C:\Users\cody\AppData\Local\Temp\ICD_20260409-161137-907_5084.8_590383814.2\Prov\RunTime\3__OOBE_Desktop_HideOobe.provxml
-4/9/2026 4:11:37 PM Info provxml writer, path = C:\Users\cody\AppData\Local\Temp\ICD_20260409-161137-907_5084.8_590383814.2\Prov\RunTime\4__ProvisioningCommands_PrimaryContext_Command_0_CommandFile.provxml
-4/9/2026 4:11:37 PM Info provxml writer, path = C:\Users\cody\AppData\Local\Temp\ICD_20260409-161137-907_5084.8_590383814.2\Prov\RunTime\5__ProvisioningCommands_PrimaryContext_Command_0_CommandLine.provxml
-4/9/2026 4:11:37 PM Info provxml writer, path = C:\Users\cody\AppData\Local\Temp\ICD_20260409-161137-907_5084.8_590383814.2\Prov\RunTime\6__ProvisioningCommands_PrimaryContext_Command_0_ContinueInstall.provxml
-4/9/2026 4:11:37 PM Info provxml writer, path = C:\Users\cody\AppData\Local\Temp\ICD_20260409-161137-907_5084.8_590383814.2\Prov\RunTime\7__ProvisioningCommands_PrimaryContext_Command_0_DependencyPackages_0.provxml
-4/9/2026 4:11:37 PM Info provxml writer, path = C:\Users\cody\AppData\Local\Temp\ICD_20260409-161137-907_5084.8_590383814.2\Prov\RunTime\8__ProvisioningCommands_PrimaryContext_Command_0_DependencyPackages_1.provxml
-4/9/2026 4:11:37 PM Info provxml writer, path = C:\Users\cody\AppData\Local\Temp\ICD_20260409-161137-907_5084.8_590383814.2\Prov\RunTime\9__ProvisioningCommands_PrimaryContext_Command_0_RestartRequired.provxml
-4/9/2026 4:11:37 PM Info provxml writer, path = C:\Users\cody\AppData\Local\Temp\ICD_20260409-161137-907_5084.8_590383814.2\Prov\RunTime\10__ProvisioningCommands_PrimaryContext_Command_0_ReturnCodeRestart.provxml
-4/9/2026 4:11:37 PM Info provxml writer, path = C:\Users\cody\AppData\Local\Temp\ICD_20260409-161137-907_5084.8_590383814.2\Prov\RunTime\11__ProvisioningCommands_PrimaryContext_Command_0_ReturnCodeSuccess.provxml
-4/9/2026 4:11:37 PM Info Adding deployment settings to Provisioning Package
-4/9/2026 4:11:37 PM Info Adding file assets to Provisioning Package
-4/9/2026 4:11:37 PM Info Packaging file asset C:\Users\cody\Downloads\rustdesk-1.4.6-x86_64.msi
-4/9/2026 4:11:38 PM Info Sent message to all clients for project 5afb2046-d989-4a93-afec-d77b01f58690
-4/9/2026 4:11:38 PM Info Packaging file asset C:\Users\cody\Downloads\VC_redist.x86.exe
-4/9/2026 4:11:38 PM Info Sent message to all clients for project 5afb2046-d989-4a93-afec-d77b01f58690
-4/9/2026 4:11:38 PM Info Packaging file asset C:\Users\cody\Downloads\VC_redist.x64.exe
-4/9/2026 4:11:38 PM Info Sent message to all clients for project 5afb2046-d989-4a93-afec-d77b01f58690
-4/9/2026 4:11:38 PM Info CopyFile: Source path: C:\Users\cody\AppData\Local\Temp\ICD_20260409-161138-673_5084.8_315558660.cat, Target path: C:\Users\cody\Documents\Windows Imaging and Configuration Designer (WICD)\ppkg\ppkg.cat
-4/9/2026 4:11:38 PM Info CopyFile: Source path: C:\Users\cody\AppData\Local\Temp\ICD_20260409-161137-895_5084.8_288569854.1, Target path: C:\Users\cody\Documents\Windows Imaging and Configuration Designer (WICD)\ppkg\ppkg.ppkg
-4/9/2026 4:11:38 PM Info DeleteFile: File '' does not exist
-4/9/2026 4:11:38 PM Info DeleteFile: File 'C:\Users\cody\AppData\Local\Temp\ICD_20260409-161137-895_5084.8_288569854.1' does not exist
-4/9/2026 4:11:38 PM Info Provisioning package build is completed with result: Success
-4/9/2026 4:11:38 PM Info Sent message to all clients for project 5afb2046-d989-4a93-afec-d77b01f58690
-4/9/2026 4:12:20 PM Info Clear all Config Template answers
-4/9/2026 4:12:20 PM Info Save Config Template answers for active project
-4/9/2026 4:12:21 PM Info Project 'ppkg' created successfully and added to workspace
-4/9/2026 4:12:31 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-oobe#desktop
-4/9/2026 4:12:37 PM Info Stopping server
+4/9/2026 9:01:21 PM Info Project 'Project_2' created successfully and added to workspace
+4/9/2026 9:01:21 PM Info Loading scenario ID: d2fa89db-1251-4bdf-b1bf-4b96016aaea4, URI: http://localhost:9098/Scenarios/d2fa89db-1251-4bdf-b1bf-4b96016aaea4/Index.html
+4/9/2026 9:03:42 PM Info Clear all Config Template answers
+4/9/2026 9:03:42 PM Info Save Config Template answers for active project
+4/9/2026 9:03:42 PM Info Start provisioning package build
+4/9/2026 9:03:42 PM Info Exporting customizations as a Provisioning Package to 'C:\Users\cody\AppData\Local\Temp\ICD_20260409-210342-706_19292.13_719565127.1'
+4/9/2026 9:03:42 PM Info Adding runtime settings to Provisioning Package
+4/9/2026 9:03:42 PM Info CreateTempDirectory: Create directory: C:\Users\cody\AppData\Local\Temp\ICD_20260409-210342-718_19292.13_196695024.2
+4/9/2026 9:03:42 PM Info provxml writer, path = C:\Users\cody\AppData\Local\Temp\ICD_20260409-210342-718_19292.13_196695024.2\Prov\RunTime\0__Accounts_ComputerAccount.provxml
+4/9/2026 9:03:42 PM Info provxml writer, path = C:\Users\cody\AppData\Local\Temp\ICD_20260409-210342-718_19292.13_196695024.2\Prov\RunTime\1__Accounts_Users_nomerellocal.provxml
+4/9/2026 9:03:42 PM Info provxml writer, path = C:\Users\cody\AppData\Local\Temp\ICD_20260409-210342-718_19292.13_196695024.2\Prov\RunTime\2__EditionUpgrade_UpgradeEditionWithProductKey.provxml
+4/9/2026 9:03:42 PM Info provxml writer, path = C:\Users\cody\AppData\Local\Temp\ICD_20260409-210342-718_19292.13_196695024.2\Prov\RunTime\3__Policies_ApplicationManagement_AllowAllTrustedApps.provxml
+4/9/2026 9:03:42 PM Info provxml writer, path = C:\Users\cody\AppData\Local\Temp\ICD_20260409-210342-718_19292.13_196695024.2\Prov\RunTime\4__OOBE_Desktop_HideOobe.provxml
+4/9/2026 9:03:42 PM Info provxml writer, path = C:\Users\cody\AppData\Local\Temp\ICD_20260409-210342-718_19292.13_196695024.2\Prov\RunTime\5__ProvisioningCommands_PrimaryContext_Command_0_CommandFile.provxml
+4/9/2026 9:03:42 PM Info provxml writer, path = C:\Users\cody\AppData\Local\Temp\ICD_20260409-210342-718_19292.13_196695024.2\Prov\RunTime\6__ProvisioningCommands_PrimaryContext_Command_0_CommandLine.provxml
+4/9/2026 9:03:42 PM Info provxml writer, path = C:\Users\cody\AppData\Local\Temp\ICD_20260409-210342-718_19292.13_196695024.2\Prov\RunTime\7__ProvisioningCommands_PrimaryContext_Command_0_ContinueInstall.provxml
+4/9/2026 9:03:42 PM Info provxml writer, path = C:\Users\cody\AppData\Local\Temp\ICD_20260409-210342-718_19292.13_196695024.2\Prov\RunTime\8__ProvisioningCommands_PrimaryContext_Command_0_RestartRequired.provxml
+4/9/2026 9:03:42 PM Info provxml writer, path = C:\Users\cody\AppData\Local\Temp\ICD_20260409-210342-718_19292.13_196695024.2\Prov\RunTime\9__ProvisioningCommands_PrimaryContext_Command_0_ReturnCodeRestart.provxml
+4/9/2026 9:03:42 PM Info provxml writer, path = C:\Users\cody\AppData\Local\Temp\ICD_20260409-210342-718_19292.13_196695024.2\Prov\RunTime\10__ProvisioningCommands_PrimaryContext_Command_0_ReturnCodeSuccess.provxml
+4/9/2026 9:03:42 PM Info Adding deployment settings to Provisioning Package
+4/9/2026 9:03:42 PM Info Adding file assets to Provisioning Package
+4/9/2026 9:03:42 PM Info Packaging file asset C:\Users\cody\Downloads\rustdesk-1.4.6-x86_64.msi
+4/9/2026 9:03:43 PM Info Sent message to all clients for project 66018419-24b9-4d48-83b0-d307326f66e9
+4/9/2026 9:03:43 PM Info CopyFile: Source path: C:\Users\cody\AppData\Local\Temp\ICD_20260409-210343-095_19292.13_151739958.cat, Target path: C:\Users\cody\Documents\Windows Imaging and Configuration Designer (WICD)\Project_2\Project_2.cat
+4/9/2026 9:03:43 PM Info CopyFile: Source path: C:\Users\cody\AppData\Local\Temp\ICD_20260409-210342-706_19292.13_719565127.1, Target path: C:\Users\cody\Documents\Windows Imaging and Configuration Designer (WICD)\Project_2\Project_2.ppkg
+4/9/2026 9:03:43 PM Info DeleteFile: File '' does not exist
+4/9/2026 9:03:43 PM Info DeleteFile: File 'C:\Users\cody\AppData\Local\Temp\ICD_20260409-210342-706_19292.13_719565127.1' does not exist
+4/9/2026 9:03:43 PM Info Provisioning package build is completed with result: Success
+4/9/2026 9:03:43 PM Info Sent message to all clients for project 66018419-24b9-4d48-83b0-d307326f66e9
+4/9/2026 9:11:54 PM Info Project 'Project_2' created successfully and added to workspace
+4/9/2026 9:11:54 PM Info Loading scenario ID: d2fa89db-1251-4bdf-b1bf-4b96016aaea4, URI: http://localhost:9098/Scenarios/d2fa89db-1251-4bdf-b1bf-4b96016aaea4/Index.html
+4/9/2026 9:12:09 PM Info Clear all Config Template answers
+4/9/2026 9:12:09 PM Info Save Config Template answers for active project
+4/9/2026 9:12:09 PM Info Project 'Project_2' created successfully and added to workspace
+4/9/2026 9:12:18 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-accounts#users
+4/9/2026 9:12:19 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-accounts#users
+4/9/2026 9:12:26 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-accounts#users
+4/9/2026 9:12:39 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-accounts#users
+4/9/2026 9:12:57 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-accounts#users
+4/9/2026 9:12:58 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-accounts#users
+4/9/2026 9:13:19 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-editionupgrade#upgradeeditionwithproductkey
+4/9/2026 9:13:21 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-editionupgrade#changeproductkey
+4/9/2026 9:13:25 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-accounts#computeraccount
+4/9/2026 9:13:26 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-accounts#computeraccount
+4/9/2026 9:13:39 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-accounts#computeraccount
+4/9/2026 9:13:44 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-accounts#users
+4/9/2026 9:13:53 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-accounts#users
+4/9/2026 9:14:10 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-accounts#users
+4/9/2026 9:14:11 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-accounts#users
+4/9/2026 9:14:12 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-accounts#users
+4/9/2026 9:14:14 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-accounts#users
+4/9/2026 9:14:16 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-accounts#users
+4/9/2026 9:14:40 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-accounts#users
+4/9/2026 9:14:44 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-accounts#users
+4/9/2026 9:14:45 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-accounts#users
+4/9/2026 9:15:13 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-accounts#users
+4/9/2026 9:15:15 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-accounts#users
+4/9/2026 9:15:16 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-accounts#users
+4/9/2026 9:15:18 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-accounts#users
+4/9/2026 9:15:18 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-accounts#users
+4/9/2026 9:15:19 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-accounts#users
+4/9/2026 9:15:25 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-accounts#computeraccount
+4/9/2026 9:15:26 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-accounts#computeraccount
+4/9/2026 9:15:45 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-accounts#users
+4/9/2026 9:15:55 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-accounts#users
+4/9/2026 9:15:59 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-accounts#users
+4/9/2026 9:15:59 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-accounts#users
+4/9/2026 9:15:59 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-accounts#users
+4/9/2026 9:16:00 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-accounts#users
+4/9/2026 9:16:00 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-accounts#users
+4/9/2026 9:16:34 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-oobe#desktop
+4/9/2026 9:16:35 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-oobe#desktop
+4/9/2026 9:16:37 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-oobe#desktop
+4/9/2026 9:16:37 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-oobe#desktop
+4/9/2026 9:16:37 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-oobe#desktop
+4/9/2026 9:16:37 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-oobe#desktop
+4/9/2026 9:16:38 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-oobe#desktop
+4/9/2026 9:16:59 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-provisioningcommands#devicecontext
+4/9/2026 9:17:16 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-provisioningcommands#devicecontext
+4/9/2026 9:17:21 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-start#startlayout
+4/9/2026 9:17:25 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-start#startlayout
+4/9/2026 9:17:27 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-start#startlayout
+4/9/2026 9:17:29 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-storaged3inmodernstandby#storaged3inmodernstandby
+4/9/2026 9:17:43 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-usberrorsoemoverride#hideusberrornotifyoptionui
+4/9/2026 9:17:47 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-usberrorsoemoverride#hideusberrornotifyoptionui
+4/9/2026 9:18:03 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-languagepackmanagement#systempreferreduilanguage
+4/9/2026 9:18:28 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-languagepackmanagement#systempreferreduilanguage
+4/9/2026 9:18:31 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-languagepackmanagement#languagepackinstall
+4/9/2026 9:18:42 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-languagepackmanagement#languagepackinstall
+4/9/2026 9:18:42 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-languagepackmanagement#languagepackinstall
+4/9/2026 9:18:46 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-languagepackmanagement#languagepackinstall
+4/9/2026 9:18:46 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-languagepackmanagement#languagepackinstall
+4/9/2026 9:18:49 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-languagepackmanagement#languagepackinstall
+4/9/2026 9:18:56 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-languagepackmanagement#languagepackinstall
+4/9/2026 9:18:57 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-languagepackmanagement#languagepackinstall
+4/9/2026 9:18:58 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-languagepackmanagement#languagepackinstall
+4/9/2026 9:18:58 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-languagepackmanagement#languagepackinstall
+4/9/2026 9:18:59 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-languagepackmanagement#languagepackinstall
+4/9/2026 9:19:00 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-languagepackmanagement#languagepackinstall
+4/9/2026 9:19:10 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-languagepackmanagement#languagepackinstall
+4/9/2026 9:19:10 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-languagepackmanagement#languagepackinstall
+4/9/2026 9:19:11 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-languagepackmanagement#languagepackinstall
+4/9/2026 9:19:11 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-languagepackmanagement#languagepackinstall
+4/9/2026 9:19:16 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-languagepackmanagement#systempreferreduilanguage
+4/9/2026 9:19:44 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-countryandregion#countrycodeforextendedcapabilityprompts
+4/9/2026 9:19:48 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-countryandregion#countrycodeforextendedcapabilityprompts
+4/9/2026 9:20:15 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-admx_policies#controlpaneldisplay
+4/9/2026 9:20:21 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-admx_policies#controlpaneldisplay
+4/9/2026 9:20:23 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-admx_policies#controlpaneldisplay
+4/9/2026 9:20:24 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-admx_policies#controlpaneldisplay
+4/9/2026 9:20:25 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-admx_policies#controlpaneldisplay
+4/9/2026 9:20:30 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-admx_policies#desktop
+4/9/2026 9:20:31 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-admx_policies#desktop
+4/9/2026 9:20:32 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-admx_policies#desktop
+4/9/2026 9:20:37 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-admx_policies#startmenu
+4/9/2026 9:20:41 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-admx_policies#startmenu
+4/9/2026 9:20:43 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-admx_policies#startmenu
+4/9/2026 9:20:44 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-admx_policies#startmenu
+4/9/2026 9:20:46 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-admx_policies#startmenu
+4/9/2026 9:20:50 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-admx_policies#startmenu
+4/9/2026 9:20:52 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-admx_policies#startmenu
+4/9/2026 9:20:59 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-assignedaccess#assignedaccesssettings
+4/9/2026 9:21:01 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-assignedaccess#multiappassignedaccesssettings
+4/9/2026 9:21:02 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-assignedaccess#assignedaccesssettings
+4/9/2026 9:21:06 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-browser#partnersearchcode
+4/9/2026 9:21:10 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-browser#partnersearchcode
+4/9/2026 9:21:13 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-cleanpc#cleanpcretaininguserdata
+4/9/2026 9:21:29 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-clouddesktop#boottocloudpcenhanced
+4/9/2026 9:21:46 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-connections#general
+4/9/2026 9:21:47 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-connections#general
+4/9/2026 9:21:51 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-connections#general
+4/9/2026 9:22:03 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-connectivityprofiles#knownaccounts
+4/9/2026 9:22:07 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-connectivityprofiles#cellular5gsasettings
+4/9/2026 9:22:15 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-devdetail#dnscomputername
+4/9/2026 9:22:19 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-devdetail#dnscomputername
+4/9/2026 9:22:53 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-time#provisionsettimezone
+4/9/2026 9:22:55 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-time#provisionsettimezone
+4/9/2026 9:22:56 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-time#provisionsettimezone
+4/9/2026 9:22:56 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-time#provisionsettimezone
+4/9/2026 9:23:01 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-time#provisionsettimezone
+4/9/2026 9:23:01 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-time#provisionsettimezone
+4/9/2026 9:23:01 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-time#provisionsettimezone
+4/9/2026 9:23:01 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-time#provisionsettimezone
+4/9/2026 9:23:04 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-time#provisionsettimezone
+4/9/2026 9:23:06 PM Info Navigating to URI https://docs.microsoft.com/windows/configuration/wcd/wcd-unifiedwritefilter#filterenabled
+4/9/2026 9:23:46 PM Info Start Provisioning package Build for Project: Project_2
+4/9/2026 9:24:09 PM Info Exporting customizations as a Provisioning Package to 'C:\Users\cody\AppData\Local\Temp\ICD_20260409-212409-894_19292.36_406508889.5'
+4/9/2026 9:24:09 PM Info Adding runtime settings to Provisioning Package
+4/9/2026 9:24:09 PM Info CreateTempDirectory: Create directory: C:\Users\cody\AppData\Local\Temp\ICD_20260409-212409-904_19292.36_125901813.6
+4/9/2026 9:24:09 PM Info provxml writer, path = C:\Users\cody\AppData\Local\Temp\ICD_20260409-212409-904_19292.36_125901813.6\Prov\RunTime\0__Accounts_ComputerAccount.provxml
+4/9/2026 9:24:09 PM Info provxml writer, path = C:\Users\cody\AppData\Local\Temp\ICD_20260409-212409-904_19292.36_125901813.6\Prov\RunTime\1__Accounts_Users_Administrator.provxml
+4/9/2026 9:24:09 PM Info provxml writer, path = C:\Users\cody\AppData\Local\Temp\ICD_20260409-212409-904_19292.36_125901813.6\Prov\RunTime\2__Accounts_Users_nomerellocal.provxml
+4/9/2026 9:24:09 PM Info provxml writer, path = C:\Users\cody\AppData\Local\Temp\ICD_20260409-212409-904_19292.36_125901813.6\Prov\RunTime\3__EditionUpgrade_UpgradeEditionWithProductKey.provxml
+4/9/2026 9:24:09 PM Info provxml writer, path = C:\Users\cody\AppData\Local\Temp\ICD_20260409-212409-904_19292.36_125901813.6\Prov\RunTime\4__LanguagePackManagement_LanguagePackInstall_en-US.provxml
+4/9/2026 9:24:09 PM Info provxml writer, path = C:\Users\cody\AppData\Local\Temp\ICD_20260409-212409-904_19292.36_125901813.6\Prov\RunTime\5__LanguagePackManagement_SystemPreferredUILanguage.provxml
+4/9/2026 9:24:09 PM Info provxml writer, path = C:\Users\cody\AppData\Local\Temp\ICD_20260409-212409-904_19292.36_125901813.6\Prov\RunTime\6__Policies_ApplicationManagement_AllowAllTrustedApps.provxml
+4/9/2026 9:24:09 PM Info provxml writer, path = C:\Users\cody\AppData\Local\Temp\ICD_20260409-212409-904_19292.36_125901813.6\Prov\RunTime\7__OOBE_Desktop_EnableCortanaVoice.provxml
+4/9/2026 9:24:09 PM Info provxml writer, path = C:\Users\cody\AppData\Local\Temp\ICD_20260409-212409-904_19292.36_125901813.6\Prov\RunTime\8__OOBE_Desktop_HideOobe.provxml
+4/9/2026 9:24:09 PM Info provxml writer, path = C:\Users\cody\AppData\Local\Temp\ICD_20260409-212409-904_19292.36_125901813.6\Prov\RunTime\9__ProvisioningCommands_PrimaryContext_Command_0_CommandFile.provxml
+4/9/2026 9:24:09 PM Info provxml writer, path = C:\Users\cody\AppData\Local\Temp\ICD_20260409-212409-904_19292.36_125901813.6\Prov\RunTime\10__ProvisioningCommands_PrimaryContext_Command_0_CommandLine.provxml
+4/9/2026 9:24:09 PM Info provxml writer, path = C:\Users\cody\AppData\Local\Temp\ICD_20260409-212409-904_19292.36_125901813.6\Prov\RunTime\11__ProvisioningCommands_PrimaryContext_Command_0_ContinueInstall.provxml
+4/9/2026 9:24:09 PM Info provxml writer, path = C:\Users\cody\AppData\Local\Temp\ICD_20260409-212409-904_19292.36_125901813.6\Prov\RunTime\12__ProvisioningCommands_PrimaryContext_Command_0_RestartRequired.provxml
+4/9/2026 9:24:09 PM Info provxml writer, path = C:\Users\cody\AppData\Local\Temp\ICD_20260409-212409-904_19292.36_125901813.6\Prov\RunTime\13__ProvisioningCommands_PrimaryContext_Command_0_ReturnCodeRestart.provxml
+4/9/2026 9:24:09 PM Info provxml writer, path = C:\Users\cody\AppData\Local\Temp\ICD_20260409-212409-904_19292.36_125901813.6\Prov\RunTime\14__ProvisioningCommands_PrimaryContext_Command_0_ReturnCodeSuccess.provxml
+4/9/2026 9:24:09 PM Info provxml writer, path = C:\Users\cody\AppData\Local\Temp\ICD_20260409-212409-904_19292.36_125901813.6\Prov\RunTime\15__Time_ProvisionSetTimeZone.provxml
+4/9/2026 9:24:09 PM Info Adding deployment settings to Provisioning Package
+4/9/2026 9:24:09 PM Info Adding file assets to Provisioning Package
+4/9/2026 9:24:09 PM Info Packaging file asset C:\Users\cody\Downloads\rustdesk-1.4.6-x86_64.msi
+4/9/2026 9:24:10 PM Info CopyFile: File 'C:\Users\cody\Documents\Windows Imaging and Configuration Designer (WICD)\Project_2\Project_2.cat' exist and called with overwrite
+4/9/2026 9:24:10 PM Info CopyFile: Source path: C:\Users\cody\AppData\Local\Temp\ICD_20260409-212410-255_19292.36_53083601.cat, Target path: C:\Users\cody\Documents\Windows Imaging and Configuration Designer (WICD)\Project_2\Project_2.cat
+4/9/2026 9:24:10 PM Info CopyFile: File 'C:\Users\cody\Documents\Windows Imaging and Configuration Designer (WICD)\Project_2\Project_2.ppkg' exist and called with overwrite
+4/9/2026 9:24:10 PM Info CopyFile: Source path: C:\Users\cody\AppData\Local\Temp\ICD_20260409-212409-894_19292.36_406508889.5, Target path: C:\Users\cody\Documents\Windows Imaging and Configuration Designer (WICD)\Project_2\Project_2.ppkg
+4/9/2026 9:24:10 PM Info DeleteFile: File '' does not exist
+4/9/2026 9:24:10 PM Info DeleteFile: File 'C:\Users\cody\AppData\Local\Temp\ICD_20260409-212409-894_19292.36_406508889.5' does not exist
+4/9/2026 9:24:10 PM Info Media Creation Build Success page
+4/9/2026 9:24:17 PM Info Build workflow finished.
+4/9/2026 10:21:40 PM Info Start Provisioning package Build for Project: Project_2
