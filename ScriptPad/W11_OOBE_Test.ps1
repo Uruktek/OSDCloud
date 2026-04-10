@@ -130,7 +130,7 @@ Start /Wait PowerShell -NoL -C Install-Module OSD -Force -Verbose
 Start /Wait PowerShell -NoL -C Invoke-WebRequest -Uri "https://github.com/Uruktek/OSDCloud/raw/refs/heads/main/ppkg/Project_2.ppkg" -OutFile 'C:\OSDcloud\Automate\Provisioning\Project_2.ppkg' -Verbose
 Start /Wait PowerShell -NoL -C Start-OOBEDeploy
 '@
-$OOBECMD | Out-File -FilePath 'Create C:\Windows\Setup\Scripts\OOBE.cmd' -Encoding ascii -Force
+$OOBECMD | Out-File -FilePath 'C:\Windows\System32\OOBE.cmd' -Encoding ascii -Force
 
 #================================================
 #  [PostOS] SetupComplete CMD Command Line
