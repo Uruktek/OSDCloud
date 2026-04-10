@@ -76,10 +76,51 @@ If (!(Test-Path "C:\ProgramData\OSDeploy")) {
 $OOBEDeployJson | Out-File -FilePath "C:\ProgramData\OSDeploy\OSDeploy.OOBEDeploy.json" -Encoding ascii -Force
 
 #================================================
+#  [PostOS] AutopilotOOBE Configuration Staging
+#================================================
+Write-Host -ForegroundColor Green "Define Computername:"
+$Serial = Get-WmiObject Win32_bios | Select-Object -ExpandProperty SerialNumber
+$TargetComputername = $Serial.Substring(4,3)
+
+$AssignedComputerName = "Win-$TargetComputername"
+Write-Host -ForegroundColor Red $AssignedComputerName
+Write-Host ""
+
+Write-Host -ForegroundColor Green "Create C:\ProgramData\OSDeploy\OSDeploy.AutopilotOOBE.json"
+# $AutopilotOOBEJson = @"
+# {
+#     "AssignedComputerName" : "$AssignedComputerName",
+#     "AddToGroup":  "AADGroupX",
+#     "Assign":  {
+#                    "IsPresent":  true
+#                },
+#     "GroupTag":  "GroupTagXXX",
+#     "Hidden":  [
+#                    "AddToGroup",
+#                    "AssignedUser",
+#                    "PostAction",
+#                    "GroupTag",
+#                    "Assign"
+#                ],
+#     "PostAction":  "Quit",
+#     "Run":  "NetworkingWireless",
+#     "Docs":  "https://google.com/",
+#     "Title":  "Autopilot Manual Register"
+# }
+# "@
+
+If (!(Test-Path "C:\ProgramData\OSDeploy")) {
+    New-Item "C:\ProgramData\OSDeploy" -ItemType Directory -Force | Out-Null
+}
+# teno disabling of this.
+#$AutopilotOOBEJson | Out-File -FilePath "C:\ProgramData\OSDeploy\OSDeploy.AutopilotOOBE.json" -Encoding ascii -Force
+
+
+#================================================
 #  [PostOS] AutopilotOOBE CMD Command Line
 #================================================
 
-Write-Host -ForegroundColor Green "Create C:\Windows\System32\OOBE.cmd"
+Write-Host -ForegroundColor Green "Create Create C:\Windows\Setup\Scripts\OOBE.cmd"
 #Start /Wait PowerShell -NoL -C Invoke-WebPSScript https://cleanup.osdcloud.ch
 #Start /Wait PowerShell -NoL -C Invoke-WebPSScript https://raw.githubusercontent.com/uruktek/OSDCloud/refs/heads/main/Add-unattend.ps1
 $OOBECMD = @'
@@ -89,7 +130,7 @@ Start /Wait PowerShell -NoL -C Install-Module OSD -Force -Verbose
 Start /Wait PowerShell -NoL -C Invoke-WebRequest -Uri "https://github.com/Uruktek/OSDCloud/raw/refs/heads/main/ppkg/Project_2.ppkg" -OutFile 'C:\OSDcloud\Automate\Provisioning\Project_2.ppkg' -Verbose
 Start /Wait PowerShell -NoL -C Start-OOBEDeploy
 '@
-$OOBECMD | Out-File -FilePath 'C:\Windows\System32\OOBE.cmd' -Encoding ascii -Force
+$OOBECMD | Out-File -FilePath 'Create C:\Windows\Setup\Scripts\OOBE.cmd' -Encoding ascii -Force
 
 #================================================
 #  [PostOS] SetupComplete CMD Command Line
